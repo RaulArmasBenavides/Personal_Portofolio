@@ -83,6 +83,30 @@ h1,h2,h3,h4{
     font-weight: var(--font-semi-bold);
 }
 
+.home_title{
+    /*box-shadow: 3px 0 0 var(--first-color);*/
+    width: 13ch;
+    /*espacios en blanco no rompen la linea*/
+    white-space: nowrap; 
+    /*aparece una linea la finalizar la frase*/
+    border-right: 4px solid var(--first-color);
+    animation: type 2s steps(13),
+    blink .6s step-end infinite alternate;
+    overflow: hidden;
+}
+ 
+/*keyframes = animaciones*/
+/*el type va desde el punto inicial*/
+@keyframes type{
+    from {width: 0}
+}
+
+@keyframes blink{
+    50% {
+        border-color: transparent;
+    }
+}
+
 ul{
     list-style: none;
 }
@@ -194,8 +218,37 @@ img{
     font-weight: var(--font-medium);
 }
 
+.nav_link::before,
+.nav_link::after{
+    content: '';
+    position:  absolute;
+    left: 20px;
+    width: 95%;
+    height: 2px;
+    background-color: var(--first-color);
+    transform: scaleX(0);
+    transition: transform .25s;
+}
+
+.nav_link::before{
+    top: -3px;
+    transform-origin: left;
+
+}
+
+.nav_link::after{
+    bottom: -3px;
+    transform-origin: right;
+}
+
 .nav_link:hover{
     color: var(--first-color);
+}
+
+
+.nav_link:hover::before,
+.nav_link:hover::after{
+    transform: scaleX(1);
 }
 
 .nav_icon{
@@ -248,7 +301,7 @@ img{
 }
 
 .home_blob{
-    width: 200px;
+   /* width: 200px;*/
     fill: var(--fill-color);
     margin-top: var(--mb-2);
 
@@ -516,4 +569,6 @@ img{
     margin-bottom: var(--mb-1);
 }
 
-.qua
+.qua{
+    
+}
