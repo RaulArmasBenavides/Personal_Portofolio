@@ -57,7 +57,7 @@
             </div>
         </nav>
     </header>
-<!--MAIN SECTION-->
+    <!--MAIN SECTION-->
     <main class="main">
         <section class="home section" id="home">
             <div class="home_container container grid">
@@ -73,7 +73,7 @@
                     <div class="home_img">
                         <svg class="home_blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                             <path d="M33.7,-37.2C45.5,-21.9,58.2,-11,59.7,1.5C61.1,13.9,51.3,27.7,39.5,34.2C27.7,40.7,13.9,39.7,-1,40.7C-15.8,41.7,-31.6,44.5,-40.4,38.1C-49.2,31.6,-51,15.8,-54.5,-3.5C-58,-22.9,-63.3,-45.7,-54.5,-61C-45.7,-76.2,-22.9,-83.9,-6,-77.9C11,-72,21.9,-52.4,33.7,-37.2Z" transform="translate(100 100)" />
-                            <image class = "home_blob-img" x='48' y='7.5' xlink:href="img/yo4.png"/>
+                            <image class = "home_blob-img" x='30' y='-1' xlink:href="img/yo4.png"/>
                         </svg>
                     </div>
                     <div class="home_data">
@@ -95,7 +95,7 @@
                 </div>
             </div>
         </section>
-<!--ABOUT SECTION-->
+        <!--ABOUT SECTION-->
         <section class="about section" id="about">
             <h2 class="section_title">About me</h2>
             <span class="section_subtitle">My introduction</span>
@@ -133,7 +133,7 @@
                 </div>
             </div>
         </section>
-<!--SKILLS SECTION-->
+        <!--SKILLS SECTION-->
         <section class="skills section" id="skills">
             <h2 class="section_title">Skills</h2>
             <span class="section_subtitle">My technical level</span>
@@ -292,14 +292,14 @@
                 </div>
             </div>
         </section>
-<!--QUALIFICATION SECTION-->
+        <!--QUALIFICATION SECTION-->
         <section class="qualification section">
             <h2 class="section_title">Qualification</h2>
             <span class="section_subtitle">My personal journey</span>
         
             <div class="qualification_container container">
                 <div class="qualification_tabs">
-                    <div class="qualification_button button-flex">
+                    <div class="qualification_button button-flex qualification_active" data-target='#education'>
                         <i class="uil uil-graduation-cap qualification_icon"></i>
                         Education 
                     </div>
@@ -309,9 +309,10 @@
                         Work
                     </div>
                 </div>
-
+                <!--QUALIFICATION SECTION 1-->
                 <div class="qualification_sections">
-                    <div class="quantification_content">
+                    <!--QUALIFICATION CONTENT 1-->
+                    <div class="quantification_content qualification_active" data-content id="education">
                         <!--QUALIFICATION 1-->
                         <div class="qualification_data">
                             <div>
@@ -349,15 +350,11 @@
                             </div>
                             
                         </div>
-
-                    </div>
-
-                    <div class="quantification_content">
-                        <!--QUALIFICATION 1-->
+                        <!--QUALIFICATION 3-->
                         <div class="qualification_data">
                             <div>
                                 <h3 class="qualification_title">None</h3>
-                                <span class="qualification_subtitle">Peru</span>
+                                <span class="qualification_subtitle">Peru - University</span>
                                 <div class="qualification_calendar">
                                     <i class="uil uil-calendar-alt"></i>
                                     20XX - 20XX
@@ -366,14 +363,68 @@
 
                             <div>
                                 <span class="qualification_rounder"></span>
-                                <!--<span class="qualification_line"></span>-->
+                                <span class="qualification_line"></span>
                             </div>
                         </div>
-                
 
+                        <!--QUALIFICATION 4-->
+                        <div class="qualification_data">
+                        <div></div>
+                        <div>
+                            <span class="qualification_rounder"></span>
+                        </div>
+                        <div>
+                            <h3 class="qualification_title">None</h3>
+                            <span class="qualification_subtitle">Peru - University</span>
+                            <div class="qualification_calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                20XX - 20XX
+                            /div>
+                        </div>
                     </div>
                 </div>
+
+                <!--QUALIFICATION CONTENT 2-->
+                <div class="quantification_content" data-content id="work">
+                <!--QUALIFICATION 1-->
+                <div class="qualification_data">
+                    <div>
+                        <h3 class="qualification_title">None</h3>
+                        <span class="qualification_subtitle">Peru</span>
+                        <div class="qualification_calendar">
+                            <i class="uil uil-calendar-alt"></i>
+                            2021 - 2026
+                        </div>
+                    </div>
+                <div>
+                    <span class="qualification_rounder"></span>
+                    <span class="qualification_line"></span>
+                </div>
             </div>
+
+                <!--QUALIFICATION 2-->
+                <div class="qualification_data">
+                    <div></div>
+
+                    <div>
+                    <span class="qualification_rounder"></span>
+                    <span class="qualification_line"></span>
+                </div>
+
+                <div>
+                    <h3 class="qualification_title">None</h3>
+                    <span class="qualification_subtitle">Peru</span>
+                    <div class="qualification_calendar">
+                        <i class="uil uil-calendar-alt"></i>
+                        2020 - 2025
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!--SERVICES SECTION-->
+        <section class="services section" id="services">
+
         </section>
     </main>
 </body>
