@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="img/shoto.jpg">
 </head>
 <body>
+<!--NAV SECTION-->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav_logo">Dayana</a>
@@ -56,6 +57,7 @@
             </div>
         </nav>
     </header>
+<!--MAIN SECTION-->
     <main class="main">
         <section class="home section" id="home">
             <div class="home_container container grid">
@@ -69,13 +71,14 @@
                         </a>
                     </div>
                     <div class="home_img">
-                        <svg class="home_blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <svg class="home_blob" viewBox="0 0 185 185" xmlns="http://www.w3.org/2000/svg">
                             <path d="M33.7,-37.2C45.5,-21.9,58.2,-11,59.7,1.5C61.1,13.9,51.3,27.7,39.5,34.2C27.7,40.7,13.9,39.7,-1,40.7C-15.8,41.7,-31.6,44.5,-40.4,38.1C-49.2,31.6,-51,15.8,-54.5,-3.5C-58,-22.9,-63.3,-45.7,-54.5,-61C-45.7,-76.2,-22.9,-83.9,-6,-77.9C11,-72,21.9,-52.4,33.7,-37.2Z" transform="translate(100 100)" />
-                            <image class = "home_blob-img" x='48' y='7.5' xlink:href="img/yo4.png"/>
+                            <image class = "home_blob-img" x ='28' y ='-7' xlink:href="img/yo4.png"/>
                         </svg>
                     </div>
                     <div class="home_data">
-                        <h1 class="home_title">Hi!, I am Dayana</h1>
+                        <h1 class="home_title">Hi!</h1>
+                        <h1 class="home_title second">I am Dayana</h1>
                         <h3 class="home_subtitle">Frontend developer and UX/UI designer</h3>
                         <p class="home_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, laborum obcaecati nostrum suscipit consequatur soluta commodi minus libero, unde hic repellendus facere! Inventore mollitia libero incidunt assumenda quis consectetur quia!</p>
                         <a href="#contact" class="button button-flex">
@@ -92,7 +95,7 @@
                 </div>
             </div>
         </section>
-
+<!--ABOUT SECTION-->
         <section class="about section" id="about">
             <h2 class="section_title">About me</h2>
             <span class="section_subtitle">My introduction</span>
@@ -126,7 +129,7 @@
                 </div>
             </div>
         </section>
-        
+<!--SKILLS SECTION-->
         <section class="skills section" id="skills">
             <h2 class="section_title">Skills</h2>
             <span class="section_subtitle">My technical level</span>
@@ -217,7 +220,6 @@
                                 <h1 class="skills_title">Backend Developer</h1>
                                 <span class="skills_subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
                             </div>
-    
                             <i class="uil uil-angle-down skills_arrow"></i>
                         </div>
     
@@ -233,8 +235,49 @@
                             </div>
                             <div class="skills_data">
                                 <div class="skills_titles">
+                                    <h3 class="skills_name">Java</h3>
+                                    <span class="skills_number">10%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skill_sqlserver"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Python</h3>
+                                    <span class="skills_number">10%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skill_sqlserver"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--SKILL 4-->
+                    <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="uil uil-server-network skills_icon"></i>
+                            <div>
+                                <h1 class="skills_title">Data & Data Analitycs</h1>
+                                <span class="skills_subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                            </div>
+                            <i class="uil uil-angle-down skills_arrow"></i>
+                        </div>
+    
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Power BI</h3>
+                                    <span class="skills_number">25%</span>
+                                </div>
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skill_csharp"></span>
+                                </div>
+                            </div>
+                            <div class="skills_data">
+                                <div class="skills_titles">
                                     <h3 class="skills_name">SQL Server</h3>
-                                    <span class="skills_number">0%</span>
+                                    <span class="skills_number">10%</span>
                                 </div>
                                 <div class="skills_bar">
                                     <span class="skills_percentage skill_sqlserver"></span>
@@ -245,26 +288,27 @@
                 </div>
             </div>
         </section>
-
+<!--QUALIFICATION SECTION-->
         <section class="qualification section">
             <h2 class="section_title">Qualification</h2>
             <span class="section_subtitle">My personal journey</span>
         
             <div class="qualification_container container">
                 <div class="qualification_tabs">
-                    <div class="qualification_button button-flex">
+                    <div class="qualification_button button-flex qualification_active" data-target='#education'>
                         <i class="uil uil-graduation-cap qualification_icon"></i>
                         Education 
                     </div>
     
-                    <div class="qualification_button button-flex">
+                    <div class="qualification_button button-flex" data-target="#work">
                         <i class="uil uil-briefcase-alt qualification_icon"></i>
                         Work
                     </div>
                 </div>
 
                 <div class="qualification_sections">
-                    <div class="quantification_content">
+                    <!--QUALIFICATION CONTENT 1-->
+                    <div class="quantification_content qualification_active" data-content id="education">
                         <!--QUALIFICATION 1-->
                         <div class="qualification_data">
                             <div>
@@ -281,12 +325,14 @@
                                 <span class="qualification_line"></span>
                             </div>
                         </div>
+
                         <!--QUALIFICATION 2-->
                         <div class="qualification_data">
                             <div></div>
+
                             <div>
                                 <span class="qualification_rounder"></span>
-                                <!--<span class="qualification_line"></span>-->
+                                <span class="qualification_line"></span>
                             </div>
 
                             <div>
@@ -300,10 +346,81 @@
 
                         </div>
 
+                        <!--QUALIFICATION 3-->
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">None</h3>
+                                <span class="qualification_subtitle">Peru - University</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    20XX - 20XX
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+
+                        <!--QUALIFICATION 4-->
+                        <div class="qualification_data">
+                            <div></div>
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <!-- <span class="qualification_line"></span> -->
+                            </div>
+                            <div>
+                                <h3 class="qualification_title">None</h3>
+                                <span class="qualification_subtitle">Peru - University</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    20XX - 20XX
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="quantification_content">
+                    <!--QUALIFICATION CONTENT 2-->
+                    <div class="quantification_content" data-content id="work">
                         <!--QUALIFICATION 1-->
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">None</h3>
+                                <span class="qualification_subtitle">Peru</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2021 - 2026
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+
+                        <!--QUALIFICATION 2-->
+                        <div class="qualification_data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification_title">None</h3>
+                                <span class="qualification_subtitle">Peru</span>
+                                <div class="qualification_calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2020 - 2025
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--QUALIFICATION 3-->
                         <div class="qualification_data">
                             <div>
                                 <h3 class="qualification_title">None</h3>
@@ -316,16 +433,20 @@
 
                             <div>
                                 <span class="qualification_rounder"></span>
-                                <!--<span class="qualification_line"></span>-->
                             </div>
                         </div>
-                
 
                     </div>
+
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+<!--SERVICES SECTION-->
+<section class="services section" id="services">
+
+</section>
+</main>
 </body>
 </html>
 <script src="main.js"></script>
